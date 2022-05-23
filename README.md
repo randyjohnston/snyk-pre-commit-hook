@@ -17,10 +17,11 @@ Install `pre-commit` package (you can use `brew install pre-commit` command).
 In your repository edit or create a `.pre-commit-config.yaml` file and configure the pre-commit. This is the basic configuration of this pre-commit hook in your .yaml file:
 
 ```
-- repo: https://github.com/randyjohnston/snyk-pre-commit-hook
-  sha: main
-  hooks:
-    - id: snyk-precommit
+repos:
+-   repo: https://github.com/randyjohnston/snyk-pre-commit-hook
+    rev: 75b2d104fb650fce70a41453fd92bb0c188e38a1
+    hooks:
+    -   id: snyk-precommit
 ```
 
 Install the git hook script using `pre-commit install`. Now `git commit` will automatically run `pre-commit`.
