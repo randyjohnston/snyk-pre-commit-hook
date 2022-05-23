@@ -1,0 +1,6 @@
+-   id: snyk-precommit
+    name: snyk-precommit
+    description: Test with Snyk
+    entry: snyk-precommit.sh
+    args: [--file=src/dummy/package.json]
+    language: script
